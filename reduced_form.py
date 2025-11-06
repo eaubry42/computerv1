@@ -5,6 +5,7 @@ def findchar(s, c):
             return True
     return False
 
+
 def getSideDigits(s):
     equal_pos = s.find('=')
     digits = []
@@ -103,13 +104,13 @@ def reduceFunct(s):
 
     max_power = max(reduced_form.keys())
     result = []
-    
+
     for i in range(max_power + 1):
         if i in reduced_form:
             result.append(reduced_form[i])
         else:
             result.append("0")
-    
+
     return result
 
 
@@ -138,5 +139,5 @@ def printReduced(reducedf):
         i += 1
 
     s += " = 0"
-    print("reduced form:", s)
+    print("Reduced form:", s)
     return i - 1
